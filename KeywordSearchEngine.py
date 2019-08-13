@@ -293,8 +293,11 @@ if __name__ == "__main__":
 
     query = ["Trump", "turtle fossil", "United States of America"]
 
+    a=False
+
     for q in query:
-        o = keyword_search_engine(q, flag_load_data_pickle = True, ...
-                    flag_save_data = False , flag_load_reverse_index = True,...
+        o = keyword_search_engine(q, flag_load_data_pickle = a, ...
+                    flag_save_data = False , flag_load_reverse_index = a,...
                     flag_save_reverse_index = False)
         print(str(q) + ": " + str(o))
+        a = True
